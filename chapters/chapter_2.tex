@@ -1,0 +1,21 @@
+ 
+
+%%%%%%%%%%%%%%%%%% REFERENCES %%%%%%%%%%%%%%%%%%
+%\clearpage % uncomment to start on a new page if wanted
+
+    \section{Project outline}
+    Project outline as submitted at the start of the project is a required appendix. Put here. 
+    
+    \section{Risk assessment}
+    Risk assessment is a required appendix. Put here.
+    
+    %\section{Other appendices as necessary}
+
+
+\begin{itemize}
+\item This is an experimental hackety hack -- things may just not work! More a proof-of-concept rather than a stable solution on Overleaf at present.
+\item tex4ht doesn't work well with \verb|fontspec| nor \verb|authblk|.
+\item Avoid \verb|\mathbf| -- this broke MathML and MathJax for me.
+\item Avoid, or re-define the \verb|multicol| environment to do nothing -- tex4ht will really export text in two or three columns \emph{by PDF page}, and it's not the most readable.
+\end{itemize}
+

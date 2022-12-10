@@ -1,0 +1,3 @@
+\RequirePackage[authoryear,
+                round]
+               {natbib}

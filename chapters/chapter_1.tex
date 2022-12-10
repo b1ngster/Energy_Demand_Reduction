@@ -1,0 +1,89 @@
+
+\section{Introduction}
+
+Your introduction goes here! 
+
+\section{Some \LaTeX{} Examples}
+\label{sec:examples}
+
+\subsection{How to Include Figures}
+
+First you have to upload the image file (JPEG, PNG or PDF) from your computer to writeLaTeX using the upload link the project menu. Then use the includegraphics command to include it in your document. Use the figure environment and the caption command to add a number and a caption to your figure. See the code for Figure \ref{fig:frog} in this section for an example.
+
+
+
+\begin{figure}
+\centering
+\includegraphics[width=0.3\textwidth]{overleaf}
+\caption{PDF images will be converted to PNG when exported to HTML.}
+\end{figure}
+
+\subsection{How to Make Tables}
+
+Use the table and tabular commands for basic tables --- see Table~\ref{tab:widgets}, for example.
+
+\begin{table}
+\centering
+\begin{tabular}{l|r}
+Item & Quantity \\\hline
+Widgets & 42 \\
+Gadgets & 13
+\end{tabular}
+\caption{\label{tab:widgets}An example table.}
+\end{table}
+
+\subsection{How to Write Mathematics}
+
+
+In this HTML export example, math is output as MathML, and will be rendered using MathJax.
+
+\subsection{How to Make Sections and Subsections}
+
+Use section and subsection commands to organize your document. \LaTeX{} handles all the formatting and numbering automatically. Use ref and label commands for cross-references.
+
+\subsection{How to Make Lists}
+
+You can make lists with automatic numbering \dots
+
+\begin{enumerate}
+\item Like this,
+\item and like this.
+\end{enumerate}
+\dots or bullet points \dots
+\begin{itemize}
+\item Like this,
+\item and like this.
+\end{itemize}
+\dots or with words and descriptions \dots
+\begin{description}
+\item[Word] Definition
+\item[Concept] Explanation
+\item[Idea] Text
+\end{description}
+
+Testing some citations: \cite{NTLKProject2015,Bond2014}
+
+\section{Tikz Drawings}
+
+TikZ drawings will be output as SVG, which should be rendered by most modern browsers.
+
+
+
+\begin{enumerate}
+
+
+\item \verb|my.cfg| contains the settings I usually use in my workflow:
+  \begin{itemize}
+  \item Output math as MathML, and render it in browsers using MathJax.
+  \item When \verb|\includegraphics| uses \verb|.jpg|, \verb|.png|, \verb|.jpg|, \verb|.svg|, use the files directly for the HTML without conversion.
+  \item When \verb|\includegraphics| uses \verb|.eps| and \verb|.pdf|, convert them to \verb|.png| using ImageMagick \verb|convert|, and use those for the HTML.
+
+  \item Tikz drawings are output as \verb|.svg|.
+  
+  \item I've included some CSS styling. You can add a separate \verb|.css| file for further styling.
+  \end{itemize}
+  
+\item When compilation is complete, use the steps at \href{https://www.overleaf.com/learn/how-to/View_generated_files}{\emph{View generated files}} to download each generated file required. There's also a \texttt{allfiles.zip} that contains \emph{all} generated files.
+\end{enumerate}
+
+\subsection{Caveats}
